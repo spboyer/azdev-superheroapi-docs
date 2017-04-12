@@ -1,11 +1,22 @@
 body {
   font-family: Titillium Web,sans-serif!important;
+  margin: 0;
   margin-bottom: 60px;
+  background: #fafafa;
 }
 
 html {
   position: relative;
   min-height: 100%;
+  box-sizing: border-box;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .container {
