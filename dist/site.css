@@ -1,0 +1,39 @@
+body {
+  font-family: Titillium Web,sans-serif!important;
+  margin-bottom: 60px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.container {
+  padding-top: 5px;
+}
+
+/* override pre.version class after bootstrap elements are applied */
+.version {
+  font-size: 10px!important;
+  padding: 2px 4px!important;
+  background: #7d8492!important;
+  border-color: #7d8492!important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+#swagger-ui {
+  margin-bottom: 100px;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+  width: auto;
+}
