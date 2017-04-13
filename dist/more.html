@@ -34,13 +34,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Superhero API Project</a>
+        <a class="navbar-brand" href="index.html">Superhero API Project</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">About</a></li>
+          <li><a href="index.html">About</a></li>
           <li><a href="docs.html">Interactive Documentation</a></li>
-          <li><a href="more.html">More...</a></li>
+          <li class="active"><a href="#">More...</a></li>
           <li><a href="https://github.com/spboyer/azdev-superheroapi-docs">Github Project</a></li>
         </ul>
       </div>
@@ -51,11 +51,10 @@
   <div style="background: url('superhero_bg.png') no-repeat top center; min-height:250px">
     <div class="container">
       <div class="col-md-4">
-        <h2>Superhero API</h2>
-        <p>The Superhero API allows developers everywhere to access the capability to generate hero names for human names in
-          their applications.
+        <h2>More...</h2>
+        <p>Here is a little more information about the concepts used in the application and links for resources related to building
+          the architecture.
           <p>
-            <p><a class="btn btn-large btn-primary" role="button" href="docs.html">Get started!</a></p>
       </div>
       <div class="col-md-4">
         &nbsp;
@@ -64,21 +63,34 @@
   </div>
 
   <div class="container">
+
+
     <div class="row">
-      <div class="col-md-4" style="min-height:220px">
-        <h2><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;Interactive Docs</h2>
-        <p>Use the interactive test page to explore and test the API calls. Supported by <a href="http://swagger.io" target="_blank">OpenAPI (Swagger)</a>.</p>
-        <p><a class="btn btn-default" href="docs.html" role="button">View details &raquo;</a></p>
+      <div class="col-md-2">Azure AppService</div>
+      <div class="col-md-4">
+        AppService WebApp Linux web application used to host the Docker image as a web application.
       </div>
-      <div class="col-md-4" style="min-height:220px">
-        <h2><i class="fa fa-bolt" aria-hidden="true"></i>&nbsp;Runs on Azure Functions</h2>
-        <p>An event-based serverless compute experience to accelerate your development. Scale based on demand and pay only for the resources you consume.</p>
-        <p><a class="btn btn-default" href="https://azure.microsoft.com/en-us/services/functions/" role="button">View details &raquo;</a></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"><a href="https://azure.microsoft.com/en-us/services/functions/">Azure Functions</a></div>
+      <div class="col-md-4">
+        <ul>
+          <li>Function App for API call(s) written in C#</li>
+          <li>Proxies for alias of API Definition file (swagger.json) from hash value to http://superhero-api.azurewebsites.net/docs/swagger.json</li>
+          <li>API Definition (preview) to create the specification</li>
+        </ul>
+
       </div>
-      <div class="col-md-4" style="min-height:220px">
-        <h2><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Project on GitHub</h2>
-        <p>View the source and see more details about how this project was built using Azure Functions, Azure App Service, OpenAPI and Docker.</p>
-        <p><a class="btn btn-default" href="https://github.com/spboyer/azdev-superheroapi-docs" role="button">View details &raquo;</a></p>
+
+      <div class="row">
+        <div class="col-md-2"><a href="swagger.io">OpenAPI (Swagger)</a></div>
+        <div class="col-md-4">Used base Docker image & Swagger UI base template for customization.</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"><a href="http://docker.com">Docker</a></div>
+        <div class="col-md-4">Create Docker image for custom API documentation / implementation of Swagger UI and uploaded to Docker Hub.</div>
       </div>
     </div>
   </div>
